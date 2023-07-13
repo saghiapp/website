@@ -1,0 +1,1 @@
+import{_ as r,o,c as t,Z as a,a as s}from"./entry.ee659731.js";const c={},l=s("div",{class:"pb-4 border-b border-gray-500"}," Article layout ",-1);function n(e,d){return o(),t("div",null,[l,a(e.$slots,"default")])}const i=r(c,[["render",n]]);export{i as default};
