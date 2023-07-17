@@ -1,1 +1,1 @@
-[حافظ](/hafez)
+[حافظ](/hafez/ghazal/1)
