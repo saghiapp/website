@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
   content: {
-    documentDriven: true
+    documentDriven: true,
+  },
+  experimental: {
+    payloadExtraction: false
   }
 })
