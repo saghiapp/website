@@ -1,0 +1,3 @@
+[submodule "content/hafez"]
+	path = content/hafez
+	url = git@github.com:saghiapp/hafez.git
