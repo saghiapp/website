@@ -34,12 +34,6 @@ jobs:
         with:
           persist-credentials: false
           submodules: true
-      # - name: git
-      #   run: |
-      #     git --version
-      #     git config user.name "GitHub Actions Bot"
-      #     git config user.email "<>"
-      #     git submodule update --recursive --remote
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
