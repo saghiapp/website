@@ -8,7 +8,11 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        '40': '10rem',
+      }
+    },
   },
   plugins: [],
 }

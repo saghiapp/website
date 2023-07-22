@@ -17,9 +17,18 @@ import "assets/main.css"
   @apply no-underline text-indigo-600;
 }
 :deep(h1) {
-  @apply mb-16 text-gray-300 text-center text-8xl;
+  @apply mb-16 text-gray-300 text-center text-8xl leading-40;
 }
 :deep(p) {
   @apply my-2 leading-10;
+}
+:deep(.b) {
+  @apply flex justify-around items-center gap-x-8;
+}
+:deep(.m1) {
+  @apply w-full text-left;
+}
+:deep(.m2) {
+  @apply w-full text-right;
 }
 </style>
