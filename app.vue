@@ -1,5 +1,15 @@
-<script>
+<script setup>
 import "assets/main.css"
+
+useHead({
+  titleTemplate: (title) => title ? `ساقی — ${title}` : `ساقی`,
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  charset: "utf-8",
+  script: [
+    { src: "https://www.googletagmanager.com/gtag/js?id=G-WGC1GVR7F8", async: true },
+    { children: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WGC1GVR7F8');" }
+  ]
+});
 </script>
 <template>
   <div dir="rtl" class="prose container mx-auto px-4 my-16" style="font-family: 'Noto Sans Arabic';">
