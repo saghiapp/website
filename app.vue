@@ -28,6 +28,11 @@ useHead({
   ]
 });
 
+const ignoreSurround = () => [
+    '/',
+    '/hafez',
+  ].includes(useRoute().path)
+
 let prev = ref({})
 let next = ref({})
 const getSurround = (path) => queryContent()
@@ -94,9 +99,9 @@ getSurround(useRoute().path)
       </button>
     </div>
     <NuxtPage />
-    <div v-if="$route.path !== '/'" class="flex justify-center gap-x-8 mt-16">
-      <NuxtLink :to="prev._path">{{ prev.title }}</NuxtLink>
-      <NuxtLink :to="next._path">{{ next.title }}</NuxtLink>
+    <div v-if="!ignoreSurround()" class="flex justify-center gap-x-8 mt-16">
+      <NuxtLink class="w-1/2 text-left" :to="prev._path">{{ prev.title }}</NuxtLink>
+      <NuxtLink class="w-1/2" :to="next._path">{{ next.title }}</NuxtLink>
     </div>
     <footer class="mt-32 text-gray-400 text-center">
       ۱۴۰۲
