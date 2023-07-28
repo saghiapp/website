@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@vueuse/nuxt',
   ],
   content: {
     documentDriven: {

@@ -1,22 +1,7 @@
 <script setup>
 import "assets/main.css"
 import { ref, watch } from 'vue'
-import {
-  Dialog,
-  DialogPanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  TransitionChild,
-  TransitionRoot,
-} from '@headlessui/vue'
-import {
-  XMarkIcon,
-} from '@heroicons/vue/24/outline'
-import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
-
-const sidebarOpen = ref(false)
+import { vOnKeyStroke } from '@vueuse/components'
 
 useHead({
   titleTemplate: (title) => title ? `ساقی — ${title}` : `ساقی`,
@@ -31,7 +16,7 @@ useHead({
 const ignoreSurround = () => [
     '/',
     '/hafez',
-  ].includes(useRoute().path)
+  ].includes(useRoute()?.path || '')
 
 let prev = ref({})
 let next = ref({})
@@ -46,6 +31,16 @@ watch(
   async (to, from) => getSurround(to)
 )
 getSurround(useRoute().path)
+
+onKeyStroke('J', (e) => {
+  e.preventDefault()
+  useRouter().push(prev.value._path)
+})
+
+onKeyStroke('K', (e) => {
+  e.preventDefault()
+  useRouter().push(next.value._path)
+})
 
 </script>
 <template>
