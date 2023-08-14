@@ -1,3 +1,6 @@
-[submodule "content/hafez"]
-	path = content/hafez
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "content/حافظ-شیرازی"]
+	path = content/حافظ-شیرازی
 	url = git@github.com:saghiapp/hafez.git

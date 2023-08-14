@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'fa'
+title = 'ساقی'
+theme = 'ananke'
+
+[markup.goldmark.renderer]
+unsafe= true
