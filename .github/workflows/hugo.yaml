@@ -45,7 +45,7 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 1
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
