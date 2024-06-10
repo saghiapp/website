@@ -1,7 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://saghi.app/'
 languageCode = 'fa'
 title = 'ساقی'
-theme = 'ananke'
+theme = 'hugo-book'
 
 [markup.goldmark.renderer]
 unsafe= true
