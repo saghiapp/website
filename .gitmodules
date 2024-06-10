@@ -4,3 +4,6 @@
 [submodule "content/حافظ-شیرازی"]
 	path = content/حافظ-شیرازی
 	url = git@github.com:saghiapp/hafez.git
+[submodule "content/شهریار"]
+	path = content/شهریار
+	url = git@github.com:saghiapp/shahriar.git
